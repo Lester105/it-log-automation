@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT Log Automation</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">IT</div>
+
+            <div>
+                <h2>IT Automation</h2>
+                <span>Log Management</span>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <div class="nav-section">
+                <span class="nav-title">MAIN</span>
+                
+                <a href="/tools" class="nav-item">
+                    <span class="nav-icon">⚡</span>
+                    Tool Links
+                </a>
+
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">▦</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">＋</span>
+                    New Log
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">☷</span>
+                    All Logs
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-title">AUTOMATION</span>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">↗</span>
+                    Excel Export
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙</span>
+                    Rules
+                </a>
+            </div>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>Local System</strong>
+                    <small>Running normally</small>
+                </div>
+            </div>
+
+            <div class="version">
+                IT Log Automation v1.0
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>IT Log Automation System</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="connection">
+                    <span class="status-dot"></span>
+                    Local
+                </div>
+
+                <div class="profile">
+                    <div class="avatar">AD</div>
+
+                    <div>
+                        <strong>Administrator</strong>
+                        <span>IT Support</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- WELCOME -->
+            <div class="welcome">
+
+                <div>
+                    <span class="eyebrow">IT OPERATIONS</span>
+
+                    <h2>Good afternoon</h2>
+
+                    <p>
+                        Manage your support logs and automate
+                        spreadsheet updates from one place.
+                    </p>
+                </div>
+
+                <button class="primary-button">
+                    + New Log
+                </button>
+
+            </div>
+
+
+            <!-- STATISTICS -->
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Total Logs</span>
+                        <div class="stat-icon blue">▤</div>
+                    </div>
+
+                    <strong>1,248</strong>
+
+                    <div class="stat-change positive">
+                        ↑ 12.5% <span>this month</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Open Issues</span>
+                        <div class="stat-icon orange">!</div>
+                    </div>
+
+                    <strong>37</strong>
+
+                    <div class="stat-change warning">
+                        8 require attention
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Resolved</span>
+                        <div class="stat-icon green">✓</div>
+                    </div>
+
+                    <strong>1,211</strong>
+
+                    <div class="stat-change positive">
+                        96.9% resolution rate
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>Excel Exports</span>
+                        <div class="stat-icon purple">↗</div>
+                    </div>
+
+                    <strong>86</strong>
+
+                    <div class="stat-change">
+                        Automated
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+            <div class="section-header">
+
+                <div>
+                    <h3>Quick Actions</h3>
+                    <p>Common IT log operations</p>
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <button class="action-card">
+
+                    <div class="action-icon blue">
+                        +
+                    </div>
+
+                    <div>
+                        <strong>Create New Log</strong>
+                        <span>Record a new IT incident</span>
+                    </div>
+
+                    <span class="arrow">→</span>
+
+                </button>
+
+
+                <button class="action-card">
+
+                    <div class="action-icon green">
+                        ↓
+                    </div>
+
+                    <div>
+                        <strong>Import Logs</strong>
+                        <span>Import existing spreadsheet data</span>
+                    </div>
+
+                    <span class="arrow">→</span>
+
+                </button>
+
+
+                <button class="action-card">
+
+                    <div class="action-icon purple">
+                        ↗
+                    </div>
+
+                    <div>
+                        <strong>Export to Excel</strong>
+                        <span>Generate updated spreadsheets</span>
+                    </div>
+
+                    <span class="arrow">→</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- RECENT LOGS -->
+            <div class="logs-section">
+
+                <div class="section-header">
+
+                    <div>
+                        <h3>Recent Logs</h3>
+                        <p>Latest activity recorded in the system</p>
+                    </div>
+
+                    <button class="secondary-button">
+                        View All
+                    </button>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>LOG ID</th>
+                                <th>DATE</th>
+                                <th>USER / AGENT</th>
+                                <th>CATEGORY</th>
+                                <th>ISSUE</th>
+                                <th>STATUS</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>#LOG-001248</strong>
+                                </td>
+
+                                <td>Aug 20, 2026</td>
+
+                                <td>
+                                    <div class="user-cell">
+                                        <div class="small-avatar">JD</div>
+                                        Juan Dela Cruz
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="badge hardware">
+                                        Hardware
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Headset not working
+                                </td>
+
+                                <td>
+                                    <span class="status resolved">
+                                        Resolved
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>#LOG-001247</strong>
+                                </td>
+
+                                <td>Aug 20, 2026</td>
+
+                                <td>
+                                    <div class="user-cell">
+                                        <div class="small-avatar">MS</div>
+                                        Maria Santos
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="badge network">
+                                        Network
+                                    </span>
+                                </td>
+
+                                <td>
+                                    VPN connection issue
+                                </td>
+
+                                <td>
+                                    <span class="status open">
+                                        Open
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>#LOG-001246</strong>
+                                </td>
+
+                                <td>Aug 19, 2026</td>
+
+                                <td>
+                                    <div class="user-cell">
+                                        <div class="small-avatar">RK</div>
+                                        Robert Kim
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="badge software">
+                                        Software
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Outlook configuration
+                                </td>
+
+                                <td>
+                                    <span class="status resolved">
+                                        Resolved
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>#LOG-001245</strong>
+                                </td>
+
+                                <td>Aug 19, 2026</td>
+
+                                <td>
+                                    <div class="user-cell">
+                                        <div class="small-avatar">AL</div>
+                                        Anna Lim
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="badge access">
+                                        Access
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Active Directory access
+                                </td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

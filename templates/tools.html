@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tool Links</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">IT</div>
+
+            <div>
+                <h2>IT Automation</h2>
+                <span>Log Management</span>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <div class="nav-section">
+                <span class="nav-title">MAIN</span>
+
+                <a href="/" class="nav-item">
+                    <span class="nav-icon">▦</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">＋</span>
+                    New Log
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">☷</span>
+                    All Logs
+                </a>
+
+                <a href="/tools" class="nav-item active">
+                    <span class="nav-icon">⚡</span>
+                    Tool Links
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <span class="nav-title">AUTOMATION</span>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">↗</span>
+                    Excel Export
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙</span>
+                    Rules
+                </a>
+            </div>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>Local System</strong>
+                    <small>Running normally</small>
+                </div>
+            </div>
+
+            <div class="version">
+                IT Log Automation v1.0
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>Tool Links</h1>
+                <p>Quick access to the systems your team uses</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="connection">
+                    <span class="status-dot"></span>
+                    Local
+                </div>
+
+                <div class="profile">
+                    <div class="avatar">AD</div>
+
+                    <div>
+                        <strong>Administrator</strong>
+                        <span>IT Support</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- TICKETING & LOGS -->
+            <div class="section-header">
+
+                <div>
+                    <h3>Ticketing &amp; Logs</h3>
+                    <p>Incident tracking and history</p>
+                </div>
+
+            </div>
+
+            <div class="tools-grid">
+
+                <a href="/" class="tool-card">
+
+                    <div class="action-icon blue">
+                        ▤
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>IT Log Automation</strong>
+                        <span>Log new incidents, browse history</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon green">
+                        ☰
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Ticket Queue</strong>
+                        <span>Assigned &amp; unassigned tickets</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon purple">
+                        ❔
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Knowledge Base</strong>
+                        <span>Internal fixes &amp; runbooks</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- MONITORING -->
+            <div class="section-header">
+
+                <div>
+                    <h3>Monitoring</h3>
+                    <p>Network and server health</p>
+                </div>
+
+            </div>
+
+            <div class="tools-grid">
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon blue">
+                        ◈
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Network Monitor</strong>
+                        <span>Uptime &amp; latency across sites</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon green">
+                        ▣
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Server Status</strong>
+                        <span>CPU, disk, memory dashboards</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon orange">
+                        ⚠
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Alert Console</strong>
+                        <span>Active pages &amp; on-call</span>
+                        <span class="status open">Offline</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- ACCESS & IDENTITY -->
+            <div class="section-header">
+
+                <div>
+                    <h3>Access &amp; Identity</h3>
+                    <p>Accounts, VPN, and permissions</p>
+                </div>
+
+            </div>
+
+            <div class="tools-grid">
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon blue">
+                        ⌘
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Active Directory</strong>
+                        <span>User &amp; group management</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon purple">
+                        ⛨
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>VPN Admin</strong>
+                        <span>Remote access &amp; certificates</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon orange">
+                        ☐
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Access Requests</strong>
+                        <span>Approve pending grants</span>
+                        <span class="status pending">Degraded</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- PRODUCTIVITY -->
+            <div class="section-header">
+
+                <div>
+                    <h3>Productivity</h3>
+                    <p>Shared files and documentation</p>
+                </div>
+
+            </div>
+
+            <div class="tools-grid">
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon purple">
+                        ↗
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Excel Export</strong>
+                        <span>Generate updated spreadsheets</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon blue">
+                        ⛁
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Shared Drive</strong>
+                        <span>Team files &amp; templates</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="tool-card">
+
+                    <div class="action-icon green">
+                        ✎
+                    </div>
+
+                    <div class="tool-card-body">
+                        <strong>Team Wiki</strong>
+                        <span>SOPs and onboarding docs</span>
+                        <span class="status resolved">Online</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
