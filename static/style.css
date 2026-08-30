@@ -814,72 +814,6 @@ td strong {
 }
 
 
-/* RESPONSIVE */
-
-@media (max-width: 1100px) {
-
-    .stats {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .quick-actions {
-        grid-template-columns:
-            1fr;
-    }
-}
-
-
-@media (max-width: 750px) {
-
-    .sidebar {
-        width: 70px;
-    }
-
-    .brand h2,
-    .brand span,
-    .nav-title,
-    .nav-item:not(.active) {
-        display: none;
-    }
-
-    .brand {
-        justify-content: center;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .nav-item {
-        justify-content: center;
-    }
-
-    .main {
-        margin-left: 70px;
-
-        width: calc(100% - 70px);
-    }
-
-    .content {
-        padding: 20px;
-    }
-
-    .welcome {
-        align-items: flex-start;
-
-        flex-direction: column;
-
-        gap: 20px;
-    }
-
-    .topbar {
-        padding: 0 20px;
-    }
-
-    .profile {
-        display: none;
-    }
-}
-
 /* TOOL LINKS */
 
 .tools-grid {
@@ -957,7 +891,19 @@ td strong {
 }
 
 
+/* RESPONSIVE */
+
 @media (max-width: 1100px) {
+
+    .stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .quick-actions {
+        grid-template-columns:
+            1fr;
+    }
 
     .tools-grid {
         grid-template-columns:
@@ -965,7 +911,55 @@ td strong {
     }
 }
 
+
 @media (max-width: 750px) {
+
+    .sidebar {
+        width: 70px;
+    }
+
+    .brand h2,
+    .brand span,
+    .nav-title,
+    .nav-item:not(.active) {
+        display: none;
+    }
+
+    .brand {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .nav-item {
+        justify-content: center;
+    }
+
+    .main {
+        margin-left: 70px;
+
+        width: calc(100% - 70px);
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .welcome {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .topbar {
+        padding: 0 20px;
+    }
+
+    .profile {
+        display: none;
+    }
 
     .tools-grid {
         grid-template-columns:
