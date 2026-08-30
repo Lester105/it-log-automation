@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In — IT Log Automation</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <div class="login-card">
+
+        <div class="login-brand">
+            <div class="brand-icon">IT</div>
+
+            <div>
+                <h2>IT Automation</h2>
+                <span>Log Management</span>
+            </div>
+        </div>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="form-error">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="{{ url_for('login') }}">
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="form-input"
+                    autocomplete="username"
+                    required
+                    autofocus
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-input"
+                    autocomplete="current-password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="form-button">
+                Sign In
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
